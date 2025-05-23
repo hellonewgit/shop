@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    background-color: #ccc;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header__link {
+    color: white;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.box-sort {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.sort {
+    border: 1px solid #c4c4c4;
+    padding: 10px 14px;
+    border-radius: 19px;
+}
+
+.sort__label {
+    font-size: 16px;
+    color: black;
+}
+
+.sort__select {
+    border: none;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.product {
+    width: 378px;
+}
+
+.product:hover .product__icons {
+    opacity: 1;
+}
+
+.product__title {
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    
+}
+
+.product__box {
+    position: relative;
+}
+
+.product__icons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.product__content {
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+.product__icon {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-solid {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.product__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.product__description {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.product__price {
+    font-size: 24px;
+    font-weight: 500;
+}
